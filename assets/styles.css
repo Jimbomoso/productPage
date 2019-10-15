@@ -1,126 +1,172 @@
 body {
-    background: whitesmoke;
-    color: #080187;
+  background: white;
+  color: #080187;
 }
 
-body, html, h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    font-family: "Helvetica", sans-serif;
+body,
+html,
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Helvetica", sans-serif;
 }
 
 nav {
-    display: block;
+  display: block;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li a {
-    text-decoration: none;
-    padding: .8rem 1rem;
-    display: block;
-    line-height: 1;
-    color: white;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  display: block;
+  line-height: 1;
+  color: white;
 }
 
 nav ul li {
-    border-bottom: 1px dotted;
+  border-bottom: 1px dotted;
 }
 
-header div:first-child h1{
-    text-align: center;
+header div:first-child h1 {
+  text-align: center;
 }
 
-header div:first-child h1, nav ul{
-    margin:0;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+header div:first-child h1,
+nav ul {
+  margin: 0;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #header {
-    background: #FA0000;
-    color: white;
-    margin: 0;
-    padding: 0;
-    position: sticky;
-    top: 0;
-    width: 100%;
+  background: #fa0000;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
 #logo h1 {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid navy;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid navy;
 }
 
 #logo img {
-    height: 100px;
+  height: 100px;
 }
 
 #logo p {
-    margin-left: 1em;
-    font-size: 30px;
+  margin-left: 1em;
+  font-size: 30px;
 }
 
 nav {
-    display: inline;
+  display: inline;
+}
+
+#products::before {
+  display: block;
+  content: " ";
+  margin-top: -150px;
+  height: 150px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#history::before {
+  display: block;
+  content: " ";
+  margin-top: -150px;
+  height: 150px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#events::before {
+  display: block;
+  content: " ";
+  margin-top: -150px;
+  height: 150px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#history::moxology {
+  display: block;
+  content: " ";
+  margin-top: -150px;
+  height: 150px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 section {
-    padding: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 150px;
 }
 
-#product, #moxol {
-    display: block;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+#product,
+#moxol {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img#product {
+  width: 40%;
+  border: 10px solid white;
 }
 
 #video {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #form {
-    display: block;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 @media only screen and (min-width: 800px) {
-    header div:first-child h1, nav ul {
-           display: flex;
-    }
-    nav {
-        display: flex;
-    }
-    nav ul li {
-        border-bottom: none;
-    }
-    #logo h1 {
-        display: flex;
-        align-items: center;
-        padding: 1em;
-        border-bottom: none;
-    }
-    
-    #logo img {
-        height: 100px;
-    }
-    
-    #logo p {
-        margin-left: 5em;
-        font-size: 30px;
-    }
-    
+  header div:first-child h1,
+  nav ul {
+    display: flex;
+  }
+  nav {
+    display: flex;
+  }
+  nav ul li {
+    border-bottom: none;
+  }
+  #logo h1 {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    border-bottom: none;
+  }
+
+  #logo img {
+    height: 100px;
+  }
+
+  #logo p {
+    margin-left: 5em;
+    font-size: 30px;
+  }
 }
