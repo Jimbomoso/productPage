@@ -1,3 +1,8 @@
+body {
+    background: whitesmoke;
+    color: #080187;
+}
+
 body, html, h1 {
     margin: 0;
     padding: 0;
@@ -42,6 +47,9 @@ header div:first-child h1, nav ul{
     color: white;
     margin: 0;
     padding: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 #logo h1 {
@@ -65,11 +73,29 @@ nav {
 
 section {
     padding: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#product, #moxol {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #video {
     display: flex;
     justify-content: center;
+}
+
+#form {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 @media only screen and (min-width: 800px) {
     header div:first-child h1, nav ul {
